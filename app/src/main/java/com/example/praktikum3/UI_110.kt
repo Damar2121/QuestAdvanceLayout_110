@@ -21,11 +21,11 @@ import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.width
 
 
-private fun Modifier.Companion.width(nama: Int): Modifier {
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
@@ -34,12 +34,12 @@ fun ActivitasPertama(modifier: Modifier){
         .padding(top=100.dp)
         .fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally,
-    ){
-    Text(
-        stringResource(R.string.prodi),
-        fontSize =  35.sp,
-        fontWeight = FontWeight.Bold
-    )
+    ) {
+        Text(
+            stringResource(R.string.prodi),
+            fontSize = 35.sp,
+            fontWeight = FontWeight.Bold
+        )
         Text(
             stringResource(R.string.univ),
             fontSize = 22.sp
@@ -65,8 +65,15 @@ fun ActivitasPertama(modifier: Modifier){
                 Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
-                        stringResource(R.string.nama)
+                        stringResource(R.string.nama),
+                        fontSize = 30.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
                     )
+
+
+
                 }
 
 
@@ -74,3 +81,5 @@ fun ActivitasPertama(modifier: Modifier){
         }
 
 
+    }
+}
