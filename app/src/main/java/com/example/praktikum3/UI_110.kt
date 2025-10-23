@@ -16,12 +16,16 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.width
 
+
+private fun Modifier.Companion.width(nama: Int): Modifier {
 
 @Composable
 fun ActivitasPertama(modifier: Modifier){
@@ -57,11 +61,16 @@ fun ActivitasPertama(modifier: Modifier){
                     modifier = Modifier
                         .size(100.dp)
                         .padding(5.dp)
-
                 )
+                Spacer(modifier = Modifier.width(30.dp))
+                Column() {
+                    Text(
+                        stringResource(R.string.nama)
+                    )
+                }
 
-                )
+
             }
         }
-}
+
 
