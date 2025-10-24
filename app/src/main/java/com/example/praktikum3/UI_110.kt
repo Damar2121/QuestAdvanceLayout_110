@@ -93,6 +93,14 @@ fun ActivitasPertama(modifier: Modifier){
         ) {
             Row() {
                 val gambar = painterResource(R.drawable.syahroni)
+
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(100.dp)
+                        .padding(5.dp)
+                )
             }
         }
         Box(
