@@ -166,6 +166,12 @@ fun ActivitasPertama(modifier: Modifier){
                     .padding(bottom = 20.dp)
 
             )
+            Text(
+                stringResource(R.string.nim2),
+                fontSize = 20.sp,
+                color = Color.Yellow,
+                modifier = Modifier.padding(top = 10.dp)
+            )
         }
     }
 }
