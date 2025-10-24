@@ -81,7 +81,7 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-        Spacer(modifier = Modifier.height(5.dp))
+        Spacer(modifier = Modifier.height(0.dp))
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
@@ -101,14 +101,26 @@ fun ActivitasPertama(modifier: Modifier){
                         .size(100.dp)
                         .padding(5.dp)
                 )
-                Spacer(modifier = Modifier.height(5.dp))
+                Spacer(modifier = Modifier.width(30.dp))
                 Column() {
                     Text(
                         stringResource(R.string.nama2),
                         fontSize = 25.sp,
                         fontFamily = FontFamily.Cursive,
                         color = Color.White,
-                        modifier = Modifier.padding(top = 15.dp)
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nim),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat2),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
                     )
                 }
             }
@@ -122,6 +134,7 @@ fun ActivitasPertama(modifier: Modifier){
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
                     .padding(bottom = 20.dp)
+
             )
         }
     }
