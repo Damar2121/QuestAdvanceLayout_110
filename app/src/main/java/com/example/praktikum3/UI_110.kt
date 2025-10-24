@@ -125,6 +125,10 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
+        Spacer(modifier = Modifier.height(5.dp))
+        Card() {
+
+        }
         Box(
             modifier = Modifier
                 .fillMaxSize()
