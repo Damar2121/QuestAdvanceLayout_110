@@ -143,7 +143,15 @@ fun ActivitasPertama(modifier: Modifier){
                         .padding(5.dp)
                 )
                 Spacer(modifier = Modifier.width(30.dp))
-
+                Column() {
+                    Text(
+                        stringResource(R.string.nama3),
+                        fontSize = 25.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
             }
 
         }
