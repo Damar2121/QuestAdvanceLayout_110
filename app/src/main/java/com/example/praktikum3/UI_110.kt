@@ -32,7 +32,7 @@ import androidx.compose.ui.unit.width
 fun ActivitasPertama(modifier: Modifier){
     Column(
         modifier = Modifier
-        .padding(top=100.dp)
+        .padding(top=70.dp)
         .fillMaxSize(),
     horizontalAlignment = Alignment.CenterHorizontally,
     ) {
@@ -45,13 +45,13 @@ fun ActivitasPertama(modifier: Modifier){
             stringResource(R.string.univ),
             fontSize = 22.sp
         )
-        Spacer(modifier = Modifier.height(25.dp))
+        Spacer(modifier = Modifier.height(5.dp))
         Card(
             modifier = Modifier
                 .fillMaxWidth(1f)
                 .padding(12.dp),
             colors = CardDefaults.cardColors(
-                contentColor = Color.White
+                containerColor = Color.DarkGray
             )
         ) {
             Row() {
@@ -69,13 +69,13 @@ fun ActivitasPertama(modifier: Modifier){
                         stringResource(R.string.nama),
                         fontSize = 30.sp,
                         fontFamily = FontFamily.Cursive,
-                        color = Color.Magenta,
+                        color = Color.White,
                         modifier = Modifier.padding(top = 15.dp)
                     )
                     Text(
                         stringResource(R.string.alamat),
                         fontSize = 20.sp,
-                        color = Color.Black,
+                        color = Color.Yellow,
                         modifier = Modifier.padding(top = 10.dp)
                     )
                 }
@@ -89,8 +89,9 @@ fun ActivitasPertama(modifier: Modifier){
                 stringResource(R.string.Copy),
                 modifier = Modifier
                     .align(Alignment.BottomCenter)
-                    .padding(bottom = 50.dp)
+                    .padding(bottom = 20.dp)
             )
         }
     }
 }
+
