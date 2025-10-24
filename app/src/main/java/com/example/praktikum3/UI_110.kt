@@ -90,7 +90,11 @@ fun ActivitasPertama(modifier: Modifier){
                 containerColor = Color.Blue
             )
 
-        ) {  }
+        ) {
+            Row() {
+                val gambar = painterResource(R.drawable.syahroni)
+            }
+        }
         Box(
             modifier = Modifier
                 .fillMaxSize()
